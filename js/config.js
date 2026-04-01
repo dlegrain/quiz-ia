@@ -1,6 +1,6 @@
 // Supabase configuration — replace with your project credentials
-export const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-export const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+export const SUPABASE_URL = 'https://lbmqhnhejryieufpkbtw.supabase.co';
+export const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxibXFobmhlanJ5aWV1ZnBrYnR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njg5MDMxOTAsImV4cCI6MjA4NDQ3OTE5MH0.yM0L7MbkBzrzL-tIKenPMTJVZts8TldMo6L8woLjlRQ';
 
 // Quiz questions — 10 QCM sur l'intelligence artificielle
 export const QUIZ_QUESTIONS = [
