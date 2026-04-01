@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Quiz IA — Testez vos connaissances</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+  <!-- SCREEN: Welcome -->
+  <section id="screen-welcome" class="screen active">
+    <div class="container">
+      <div class="welcome-icon">🤖</div>
+      <h1>Quiz Intelligence Artificielle</h1>
+      <p class="subtitle">10 questions pour tester vos connaissances sur l'IA</p>
+      <p class="subtitle-small">Suivi d'un court sondage sur vos usages</p>
+      <button id="start-btn" class="btn-primary">
+        C'est parti !
+        <span class="btn-arrow">→</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- SCREEN: Quiz -->
+  <section id="screen-quiz" class="screen">
+    <div class="container">
+      <div id="quiz-container"></div>
+    </div>
+  </section>
+
+  <!-- SCREEN: Score Reveal -->
+  <section id="screen-score" class="screen">
+    <div class="container score-reveal">
+      <p class="score-label">Votre score</p>
+      <div class="score-display">
+        <span id="score-number" class="score-number">0</span>
+        <span class="score-total">/ 10</span>
+      </div>
+      <p id="score-message" class="score-message"></p>
+      <button id="to-survey-btn" class="btn-primary">
+        Continuer vers le sondage
+        <span class="btn-arrow">→</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- SCREEN: Survey -->
+  <section id="screen-survey" class="screen">
+    <div class="container">
+      <div id="survey-container"></div>
+    </div>
+  </section>
+
+  <!-- SCREEN: Thank You -->
+  <section id="screen-thanks" class="screen">
+    <div class="container thanks-screen">
+      <div id="confetti-container" class="confetti-container"></div>
+      <div class="thanks-content">
+        <div class="thanks-icon">🎉</div>
+        <h1>Merci !</h1>
+        <p class="subtitle">Vos réponses ont bien été enregistrées.</p>
+        <p class="thanks-hint">Gardez un œil sur le grand écran pour découvrir les résultats de tous les participants…</p>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

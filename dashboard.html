@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Résultats en direct</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Header -->
+    <header class="dash-header">
+      <div class="dash-logo">🤖 Quiz IA — Résultats en direct</div>
+      <div class="participant-counter">
+        <span id="participant-count">0</span> participants
+      </div>
+    </header>
+
+    <!-- Main grid -->
+    <main class="dash-grid">
+      <!-- Big score card -->
+      <section class="card card-score">
+        <h2>Score moyen</h2>
+        <div class="big-number-container">
+          <span id="avg-score" class="big-number">—</span>
+          <span class="big-number-unit">/ 10</span>
+        </div>
+        <div id="score-distribution" class="score-distribution"></div>
+      </section>
+
+      <!-- Survey results -->
+      <section class="card card-survey" id="survey-models">
+        <h3>Modèles d'IA utilisés</h3>
+        <div class="chart-bars" id="chart-models"></div>
+      </section>
+
+      <section class="card card-survey" id="survey-paid">
+        <h3>IA payante ?</h3>
+        <div class="chart-bars" id="chart-paid"></div>
+      </section>
+
+      <section class="card card-survey" id="survey-frequency">
+        <h3>Fréquence d'utilisation</h3>
+        <div class="chart-bars" id="chart-frequency"></div>
+      </section>
+
+      <section class="card card-survey" id="survey-satisfaction">
+        <h3>Satisfaction</h3>
+        <div class="chart-bars" id="chart-satisfaction"></div>
+      </section>
+
+      <section class="card card-survey" id="survey-use">
+        <h3>Usage principal</h3>
+        <div class="chart-bars" id="chart-use"></div>
+      </section>
+
+      <section class="card card-survey" id="survey-trust">
+        <h3>Confiance dans l'IA</h3>
+        <div class="chart-bars" id="chart-trust"></div>
+      </section>
+    </main>
+
+    <!-- Snarky comment ticker -->
+    <footer class="dash-ticker">
+      <div class="ticker-label">💬 L'IA commente :</div>
+      <div id="ticker-text" class="ticker-text">En attente des premiers résultats…</div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
