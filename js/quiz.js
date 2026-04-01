@@ -69,7 +69,7 @@ function handleAnswer(container, btn, chosenIndex) {
     } else {
       onComplete(score, answers);
     }
-  }, 1200);
+  }, 3200);
 }
 
 export function getScore() { return score; }
